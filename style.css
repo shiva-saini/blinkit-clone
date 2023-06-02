@@ -229,12 +229,15 @@ height: 100%;
     flex-direction: column;
     row-gap: 5px;
     width: 150px;
+    padding: 0 10px;
 }
 
 
 .item-price{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 
 
@@ -249,6 +252,7 @@ height: 100%;
     /* justify-content: center; */
     align-items: center;
     height: 100%;
+    padding: 0 10px;
 }
 
 
@@ -261,6 +265,7 @@ height: 100%;
     line-height: 18px;
     width: 100%;
     height: 36px;
+    padding: 0 10px;
     /* margin-bottom: 6px; */
 }
 
@@ -270,6 +275,7 @@ height: 100%;
     display: flex;
     height: 26px;
     width: 100%;
+    padding: 0 10px;
 }
 
 .price{
