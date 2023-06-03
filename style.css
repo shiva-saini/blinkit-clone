@@ -8,7 +8,18 @@
     box-sizing: border-box;
 }
 
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: none;
+}
 
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 
 
 header .container{
@@ -63,7 +74,7 @@ header .container{
 .search-bar {
     border: 1px solid rgba(0, 0, 0, 0.04);
     padding: 0px 12px;
-    width: 47%;
+    width: 45%;
     height: 51px;
     display: flex;
     align-items: center;
@@ -132,11 +143,12 @@ header .container{
     align-items: center;
     justify-content: center;
     margin-top: 80px;
-
+    height: 300px;
 }
 
 .banner-1 img{
     width: 100%;
+    height: 100%;
 
 }
 
@@ -151,10 +163,16 @@ header .container{
 
 }
 
+
 ::-webkit-scrollbar{
     display: none;
 }
 
+
+
+.banner-image img{
+    width: 300px;
+}
 .categories{
     width: 1172px;
     display: grid;
@@ -312,3 +330,57 @@ height: 100%;
     box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
 }
 
+
+/* media query*/
+@media(max-width:1000px){
+    .search-bar{
+       width: 35%;   
+    }
+
+    .location{
+        margin:0 20px;
+        width: 40%;
+    }
+
+    .location-title{
+        font-size: 10px;  
+    }
+    .profile{
+        display: block;
+        margin-left:20px;
+    }
+    .logo,.login,.cart{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1100px){
+    .main-container{
+        width: 700px;
+        /* margin-left: 100px; */
+       }
+}
+
+@media screen and (max-width: 700px) {
+   .main-container{
+    width: 550px;
+    margin-left: 50px;
+   }
+
+   .banner-1{
+    width: 524px;
+    height: 250px;
+   }
+   .b{
+    width: 100%;
+   }
+
+   .banner-image img{
+    width: 400px;
+}
+   .categories{
+    grid-template-columns: repeat(5,20%);
+   }
+}
